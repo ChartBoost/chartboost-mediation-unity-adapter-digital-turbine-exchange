@@ -1,0 +1,26 @@
+{
+    "name": "Chartboost.Mediation.DigitalTurbineExchange.Android",
+    "rootNamespace": "Chartboost.Mediation.DigitalTurbineExchange.Android",
+    "references": [
+        "Chartboost.Threading",
+        "Chartboost.Logging",
+        "Chartboost.Mediation.DigitalTurbineExchange",
+        "Chartboost.Mediation",
+        "Chartboost.Mediation.Android",
+        "Chartboost.Utilities.Android"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

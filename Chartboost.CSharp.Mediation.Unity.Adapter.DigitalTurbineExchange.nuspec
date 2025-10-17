@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Chartboost.CSharp.Mediation.Unity.Adapter.DigitalTurbineExchange</id>
-    <version>5.0.0</version>
+    <version>5.0.1</version>
     <title>Chartboost Mediation Adapter - Digital Turbine Exchange</title>
     <description>The Chartboost Mediation Unity SDK Adapter for Digital Turbine Exchange.</description>
     <authors>Chartboost</authors>

@@ -2,7 +2,7 @@
 <dependencies>
     <androidPackages>
         <!-- Android Adapter -->
-        <androidPackage spec="com.chartboost:chartboost-mediation-adapter-digital-turbine-exchange:5.8.3.+"/>
+        <androidPackage spec="com.chartboost:chartboost-mediation-adapter-digital-turbine-exchange:5.8.4.+"/>
     </androidPackages>
     <iosPods>
         <!-- iOS Adapter -->

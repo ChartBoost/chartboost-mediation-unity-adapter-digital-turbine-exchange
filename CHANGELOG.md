@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file using the standards as defined at [Keep a Changelog](https://keepachangelog.com/en/1.0.0/). This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0).
 
+### Version 5.0.1 *(2025-10-05)*
+This version of the Digital Turbine Exchange Adapter supports the following native SDK dependencies:
+  * Android: `com.chartboost:chartboost-mediation-adapter-digital-turbine-exchange:5.8.4.+`
+  * iOS: `ChartboostMediationAdapterDigitalTurbineExchange: ~> 5.8.3.0`
+
 ### Version 5.0.0 *(2024-08-08)*
 
 First version of the Chartboost Mediation Unity SDK - Digital Turbine Exchange Adapter.

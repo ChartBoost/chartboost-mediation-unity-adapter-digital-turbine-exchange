@@ -1,6 +1,6 @@
 {
     "name": "com.chartboost.mediation.unity.adapter.digital-turbine-exchange",
-    "version": "5.0.0",
+    "version": "5.0.1",
     "displayName": "Chartboost Mediation Adapter - Digital Turbine Exchange",
     "description": "The Chartboost Mediation Unity SDK Adapter for Digital Turbine Exchange.",
     "unity": "2022.3",

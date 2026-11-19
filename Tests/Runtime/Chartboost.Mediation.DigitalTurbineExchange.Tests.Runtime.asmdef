@@ -6,8 +6,7 @@
         "UnityEditor.TestRunner",
         "Chartboost.Utilities",
         "Chartboost.Mediation.DigitalTurbineExchange",
-        "Chartboost.Logging",
-        "Chartboost.Utilities.Tests.Runtime"
+        "Chartboost.Utilities.Testing"
     ],
     "includePlatforms": [
         "Android",

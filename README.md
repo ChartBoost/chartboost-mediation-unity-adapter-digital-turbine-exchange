@@ -12,7 +12,7 @@ In order to add the Chartboost Mediation Unity SDK - Digital Turbine Exchange Ad
 
 ```json
 "dependencies": {
-    "com.chartboost.mediation.unity.adapter.digital-turbine-exchange": "5.0.3",
+    "com.chartboost.mediation.unity.adapter.digital-turbine-exchange": "5.0.4",
     ...
 },
 "scopedRegistries": [

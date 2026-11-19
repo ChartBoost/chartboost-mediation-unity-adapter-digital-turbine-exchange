@@ -1,38 +1,21 @@
-using Chartboost.Logging;
 using Chartboost.Mediation.DigitalTurbineExchange;
-using Chartboost.Tests.Runtime;
+using Chartboost.Testing;
 using NUnit.Framework;
 
 namespace Chartboost.Tests
 {
-    public class DigitalTurbineExchangeAdapterTests
+    internal class DigitalTurbineExchangeAdapterTests
     {
-        [SetUp]
-        public void SetUp()
-            => LogController.LoggingLevel = LogLevel.Debug;
+        [Test]
+        public void Identity() => AdapterContract.AssertIdentity("fyber", "DigitalTurbineExchange", DigitalTurbineExchangeAdapter.AdapterUnityVersion,
+            DigitalTurbineExchangeAdapter.PartnerIdentifier, DigitalTurbineExchangeAdapter.PartnerDisplayName, DigitalTurbineExchangeAdapter.AdapterNativeVersion, DigitalTurbineExchangeAdapter.PartnerSDKVersion);
 
         [Test]
-        public void AdapterNativeVersion()
-            => TestUtilities.TestStringGetter(() => DigitalTurbineExchangeAdapter.AdapterNativeVersion);
+        public void MuteAudioKeepsItsValue()
+            => AdapterContract.AssertKeeps(() => DigitalTurbineExchangeAdapter.MuteAudio, value => DigitalTurbineExchangeAdapter.MuteAudio = value, true, false);
 
         [Test]
-        public void PartnerSDKVersion()
-            => TestUtilities.TestStringGetter(() => DigitalTurbineExchangeAdapter.PartnerSDKVersion);
-
-        [Test]
-        public void PartnerIdentifier()
-            => TestUtilities.TestStringGetter(() => DigitalTurbineExchangeAdapter.PartnerIdentifier);
-
-        [Test]
-        public void PartnerDisplayName()
-            => TestUtilities.TestStringGetter(() => DigitalTurbineExchangeAdapter.PartnerDisplayName);
-
-        [Test]
-        public void MuteAudio()
-            => TestUtilities.TestBooleanAccessor(() => DigitalTurbineExchangeAdapter.MuteAudio, value => DigitalTurbineExchangeAdapter.MuteAudio = value);
-        
-        [Test]
-        public void VerboseLogging()
-            => TestUtilities.TestBooleanAccessor(() => DigitalTurbineExchangeAdapter.VerboseLogging, value => DigitalTurbineExchangeAdapter.VerboseLogging = value);
+        public void VerboseLoggingKeepsItsValue()
+            => AdapterContract.AssertKeeps(() => DigitalTurbineExchangeAdapter.VerboseLogging, value => DigitalTurbineExchangeAdapter.VerboseLogging = value, true, false);
     }
 }
